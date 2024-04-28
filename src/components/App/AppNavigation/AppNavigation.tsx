@@ -1,5 +1,5 @@
 import { BiBook, BiHome, BiPlus } from "react-icons/bi"
-import { CircleMenuItem, FlyoutMenu } from "../../Common/MenuItem"
+import { CircleMenuItem, FlyoutMenu } from "@components/Common/MenuItem"
 
 interface AppNavigationProps {}
 
@@ -14,7 +14,7 @@ const AppNavigation: React.FC<AppNavigationProps> = () => {
           <CircleMenuItem icon={<BiHome />} />
           <FlyoutMenu anchor={<CircleMenuItem icon={<BiBook />} />}>
             <div className="bg-white rounded-lg shadow-md">
-              <div className="flex justify-between items-center px-4 py-2">
+              <div className="flex justify-between items-center px-4 pya-2">
                 <div className="text-lg font-semibold">Invoices</div>
 
                 <button className="flex items-center justify-center w-8 h-8 bg-background-500 text-white rounded-full text-2xl transition-colors duration-300 ease-in-out hover:bg-background-600 hover:text-white shadow active:bg-background-700 active:text-white	shadow-md cursor-pointer">

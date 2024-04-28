@@ -1,4 +1,4 @@
-import heroImg from "../../resources/imgs/blue-aura-background.jpg"
+import heroImg from "@assets/imgs/blue-aura-background.jpg"
 
 interface HomePageProps {}
 

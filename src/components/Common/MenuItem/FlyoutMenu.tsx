@@ -1,5 +1,5 @@
 import { Popover } from "@headlessui/react"
-import { BaseTransition } from "../Transition"
+import { BaseTransition } from "@components/Common/Transition"
 
 interface FlyoutMenuProps {
   anchor?: React.ReactNode

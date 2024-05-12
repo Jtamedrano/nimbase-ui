@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES6",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -8,8 +8,7 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
+    "module": "CommonJS",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -17,8 +16,10 @@
     "types": ["vitest/globals"],
     "baseUrl": "./",
     "paths": {
+      "@assets/*": ["src/resources/*"],
       "@components/*": ["src/components/*"],
-      "@assets/*": ["src/resources/*"]
+      "@models/*": ["src/models/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
   "references": [{ "path": "./tsconfig.node.json" }]

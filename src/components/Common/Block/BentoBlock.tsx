@@ -1,3 +1,5 @@
+import cx from "classnames"
+
 interface BentoBlockProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode
 }
@@ -5,9 +7,19 @@ interface BentoBlockProps extends React.HTMLAttributes<HTMLDivElement> {
 /**
  * BentoBlock - Basic block component for bento ui blocks
  */
-const BentoBlock: React.FC<BentoBlockProps> = ({ children, ...props }) => {
+const BentoBlock: React.FC<BentoBlockProps> = ({
+  children,
+  className,
+  ...props
+}) => {
   return (
-    <div className="max-w-7xl mx-auto shadow rounded-lg bg-white" {...props}>
+    <div
+      className={cx(
+        "max-w-7xl mx-auto shadow rounded-lg bg-white p-4",
+        className,
+      )}
+      {...props}
+    >
       {children}
     </div>
   )

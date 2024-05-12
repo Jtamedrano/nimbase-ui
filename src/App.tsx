@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import HomePage from "@components/HomePage/HomePage"
 import AppWrapper from "@components/App/AppWrapper/AppWrapper"
+import CustomerRouter from "@components/App/Customer/CustomerRouter"
 
 const App = () => {
   return (
@@ -24,14 +25,7 @@ const App = () => {
               </div>
             }
           />
-          <Route
-            path="customers"
-            element={
-              <div>
-                <h1>Customers</h1>
-              </div>
-            }
-          />
+          <Route path="customers/*" element={<CustomerRouter />} />
         </Route>
       </Route>
     </Routes>
